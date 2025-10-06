@@ -41,8 +41,8 @@ cambia2=lambda datos, p: [p if i is None else i for i in datos]
 
 print(f'La funcion se llama cambia con lambda {cambia2(datos, 0)}')'''
 
-#ejercicio
-#el arreglo de 
+#ejercicio realizar una funcion teniendo en cuenta un arreglo que yo le suba
+
 numero=[10,8,45,26,7]
 def ejemplo(numero):
     may=max(numero)
