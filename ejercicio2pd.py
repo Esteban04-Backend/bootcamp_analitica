@@ -23,4 +23,20 @@ print(suma)#se imprime la suma
 dataf['Precio Total']=total#agrego una nueva columna con el precio total 
 print(dataf)
 dataf['Total Factura']=suma
-print(dataf)# preguntar
+print(dataf)
+
+
+''' Solución del Docente
+data2={'Producto':['Manzana', 'Banana', 'Cereza'],
+       'Precio': [2.5,1.8,3.0],
+       'Cantidad':[10,15,8]
+       }
+df=pd.DataFrame(data2)
+print(df.iloc[0], df.iloc[1])
+print(df.head[2])#para imprimir las primeras filas decididas por mi
+print(df.tail[2])#imprimir las filas desde el final la cantidad de veces que necesite
+
+df['P_total']=df.['Precio']*df['Cantidad']#agrega una nueva columna de en la fila
+print('la nueva serie es: ')
+print(df)
+print(f'la suma total de los productos es: {df['P_total'].sum()}')'''
