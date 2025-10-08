@@ -21,4 +21,4 @@ print(suma)#se imprime la suma
 dataf['Precio Total']=total#agrego una nueva columna con el precio total 
 print(dataf)
 dataf['Total Factura']=suma
-print(dataf)
+print(dataf)# preguntar
