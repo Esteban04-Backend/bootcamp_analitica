@@ -24,6 +24,14 @@ dataf['Precio Total']=total#agrego una nueva columna con el precio total
 print(dataf)
 dataf['Total Factura']=suma
 print(dataf)
+#sort_values me realiza ordenamiento alfabetico como numerico
+df_ordenado=dataf.sort_values(by='Producto') # ordena el data frame de forma ascendente
+print('El data frame ordenado es: ')
+print(df_ordenado)
+df_ordenadod=dataf.sort_values(by='Producto', ascending=False)# ordena el data frame de forma descendente
+print(df_ordenadod)
+f_ordenadod=dataf.sort_values(by='Producto', key=lambda x: x.str.lower()) #convierte toda las palabras del producto en minusculas
+print(f_ordenadod)
 
 
 ''' Solución del Docente
