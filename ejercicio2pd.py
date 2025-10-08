@@ -30,7 +30,7 @@ print('El data frame ordenado es: ')
 print(df_ordenado)
 df_ordenadod=dataf.sort_values(by='Producto', ascending=False)# ordena el data frame de forma descendente
 print(df_ordenadod)
-f_ordenadod=dataf.sort_values(by='Producto', key=lambda x: x.str.lower()) #convierte toda las palabras del producto en minusculas
+f_ordenadod=dataf.sort_values(by='Producto', key=lambda x: x.str.lower()) #convierte toda las palabras del producto en minusculas, las consultas adicionales siempre se separan con comas. 
 print(f_ordenadod)
 
 
