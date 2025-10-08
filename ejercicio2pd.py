@@ -12,6 +12,8 @@ acumulador=0
 dataf=pd.DataFrame(data1)#Convierto el diccionario en un dataframe
 print(dataf)#imprimo el dataframe
 filtro=dataf[dataf['Cantidad']>=10]#realizo un filtro el cual me muestra las dos primeras filas
+filtro2=dataf.iloc[0:2]# otra forma de imprimir las dos primeras filas del data frame
+print(filtro2)
 print(filtro)
 print(f' es la columna precio {dataf['Precio']}')#accedo a la columna precio
 total=(dataf['Precio'])*(dataf['Cantidad'])#multiplico la columa precio con la cantidad para obtener el precio total
